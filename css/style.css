@@ -5,3 +5,10 @@ body{
 .nav-brand{
     outline: 1px;
 }
+
+.logincard{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+}
