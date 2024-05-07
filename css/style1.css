@@ -45,7 +45,7 @@ body {
     min-width: 70px;
     z-index: 1000;
     transition: all .25s ease-in-out;
-    background-color: #0e2238;
+    background-color: #FFF;
     display: flex;
     flex-direction: column;
 }
@@ -72,7 +72,7 @@ body {
 }
 
 .sidebar-logo a {
-    color: #FFF;
+    color: #3070E9;
     font-size: 1.15rem;
     font-weight: 600;
 }
@@ -114,7 +114,7 @@ a.sidebar-link:hover {
     position: absolute;
     top: 0;
     left: 70px;
-    background-color: #0e2238;
+    background-color: #FFF;
     padding: 0;
     min-width: 15rem;
     display: none;
