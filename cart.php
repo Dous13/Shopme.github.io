@@ -27,7 +27,7 @@
         </div>
         <div class="item">
             <img src="item3.jpg" alt="STEAM VALVE CORPORATION">
-            <div class="item-details">
+            <div class="item-details">git
                 <p>STEAM VALVE CORPORATION</p>
                 <p>STEAM DECK OLED 1tb 8gb Ram</p>
                 <p>₱ 6,560.00</p>
