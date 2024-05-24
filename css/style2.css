@@ -11,7 +11,7 @@ header {
     align-items: center;
     background-color: #fff;
     padding: 10px 20px;
-    color: #fff;
+    color: #000;
 }
 
 header .logo {
@@ -21,6 +21,11 @@ header .logo {
 
 header .logo img {
     margin-right: 10px;
+}
+
+header nav {
+    flex-grow: 1;
+    margin-left: 20px;
 }
 
 header nav ul {
@@ -35,8 +40,12 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
+}
+
+header .search-bar {
+    margin-left: auto;
 }
 
 header .search-bar input {
