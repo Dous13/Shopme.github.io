@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Shopme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Shopme Admin</div>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="user-icons">
+            <a href="#">🔍</a>
+            <a href="#">🔔</a>
+            <a href="#">👤</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <aside>
+            <h2>Admin Menu</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </aside>
+
+        <section class="admin-content">
+            <!-- Dashboard -->
+            <div class="dashboard">
+                <h1>Dashboard</h1>
+                <div class="stats">
+                    <div class="stat-card">
+                        <h3>Total Sales</h3>
+                        <p>₱123,456</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Orders</h3>
+                        <p>789</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Users</h3>
+                        <p>1,234</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Management -->
+            <div class="products-management">
+                <h1>Products</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>ZOTAC Technologies</td>
+                            <td>Technology</td>
+                            <td>₱9,825.00</td>
+                            <td>20</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Orders Management -->
+            <div class="orders-management">
+                <h1>Orders</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>User</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan D. Tambaylamang</td>
+                            <td>₱22,560.00</td>
+                            <td>Pending</td>
+                            <td>2024-05-24</td>
+                            <td>
+                                <button>View</button>
+                                <button>Update</button>
+                            </td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Users Management -->
+            <div class="users-management">
+                <h1>Users</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan D. Tambaylamang</td>
+                            <td>juan@example.com</td>
+                            <td>Admin</td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Settings -->
+            <div class="settings-management">
+                <h1>Settings</h1>
+                <p>Settings options and configurations will go here.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Shopme Admin Panel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
