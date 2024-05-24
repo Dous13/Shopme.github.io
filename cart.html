@@ -1,59 +1,11 @@
-<?php
-session_start();
 
-// Mock items for the shopping bag
-$items = [
-    [
-        'id' => 1,
-        'name' => 'STEAM DECK OLED 1tb 8gb Ram',
-        'price' => 22560.00,
-        'image' => 'content/item1.jpg'
-    ],
-    [
-        'id' => 2,
-        'name' => 'STEAM DECK OLED 1tb 8gb Ram',
-        'price' => 19789.00,
-        'image' => 'content/item2.jpg'
-    ],
-    [
-        'id' => 3,
-        'name' => 'STEAM DECK OLED 1tb 8gb Ram',
-        'price' => 6560.00,
-        'image' => 'content/item3.jpg'
-    ]
-];
-
-// Initialize shopping bag if not set
-if (!isset($_SESSION['bag'])) {
-    $_SESSION['bag'] = [];
-}
-
-// Handle adding items to the bag
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_to_bag'])) {
-    $item_id = $_POST['item_id'];
-    foreach ($items as $item) {
-        if ($item['id'] == $item_id) {
-            $_SESSION['bag'][] = $item;
-            break;
-        }
-    }
-}
-
-// Calculate totals
-$total_price = array_sum(array_column($_SESSION['bag'], 'price'));
-$shipping_fee = 1000;
-$tax = 789;
-$saiko_voucher = 5000;
-$free_shipping_voucher = 1000;
-$grand_total = $total_price + $shipping_fee + $tax - $saiko_voucher - $free_shipping_voucher;
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopease - Shopping Bag</title>
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
@@ -61,14 +13,27 @@ $grand_total = $total_price + $shipping_fee + $tax - $saiko_voucher - $free_ship
         <div class="logo">
             <a href="#"><img src="content/Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">Shopme</a>
         </div>
-        <nav>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">AMD</a>
+                <a class="nav-link" href="#">Nvidia</a>
+                <a class="nav-link" aria-disabled="true">PC Builds </a>
+              </div>
+            </div>
+          </div>
+        <!-- <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sale</a></li>
                 <li><a href="#">Mall</a></li>
                 <li><a href="#">Home</a></li>
             </ul>
-        </nav>
+        </nav> -->
         <div class="search-bar">
             <input type="text" placeholder="Enter your search...">
         </div>
