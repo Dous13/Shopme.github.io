@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopme | Login</title>
-    <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Shopme | Signup</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav class="navbar bg-body-tertiary">
@@ -20,25 +20,26 @@
         <div class="logincard">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                  <h5 class="card-title">Login</h5>
+                  <h5 class="card-title">Signup</h5>
                   <br>
-                  <div class="row g-3 align-items-center">
-                    <div class="col-auto">
-                        <label for="inputPassword6" class="col-form-label">username</label>
-                      <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                  <form action="register.php" method="post">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-auto">
+                        Username: <input type="text" name="username" required><br>
+                        </div>
+                        <div class="col-auto">
+                        Email: <input type="email" name="email" required><br>
+                        </div>
+                        <div class="col-auto">
+                        Password: <input type="password" name="password" required><br>
+                        </div>
+                        <input type="submit" value="Register">
                     </div>
-                    <div class="col-auto">
-                        <label for="inputPassword6" class="col-form-label">Password</label>
-                      <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-                    </div>
-                    <a href="">Forgot password?</a>
-                    <br>
-                    <a href="Signup.html">Create an account</a>
-                    <button type="button" class="btn btn-primary">Login</button>
-                  </div>
+                  </form>
                 </div>
             </div>
         </div>
+
     </section>
 </body>
 </html>

@@ -49,3 +49,50 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Close the connection
 $conn->close();
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopme | Signup</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand bg-white" href="#">
+            <img src="content/Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Shopme
+          </a>
+        </div>
+    </nav>
+    <section class="container">
+        <div class="logincard">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Signup</h5>
+                  <br>
+                  <form action="register.php" method="post">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-auto">
+                        Username: <input type="text" name="username" required><br>
+                        </div>
+                        <div class="col-auto">
+                        Email: <input type="email" name="email" required><br>
+                        </div>
+                        <div class="col-auto">
+                        Password: <input type="password" name="password" required><br>
+                        </div>
+                        <input type="submit" value="Register">
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
