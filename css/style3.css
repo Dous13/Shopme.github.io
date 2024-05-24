@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+header .user-icons a {
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+aside {
+    width: 200px;
+    margin-right: 20px;
+}
+
+aside h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.products {
+    flex: 1;
+}
+
+.banner {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff6600;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+.product-detail {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.product-detail .product-images {
+    flex: 1;
+}
+
